@@ -1,0 +1,141 @@
+/*
+    SELETOR (QUEM EU QUERO ESTILIZAR)
+    PROPRIEDADE (O QUE EU VOU ALTERAR-COR)
+    VALOR (O VALOR QUE EU QUERO COLOCAR NA PROPRIEDADE)
+    (*) SIG - TUDO
+    magin - margem de fora da caixa /espacamento entre elementos em volta
+    padding - margem de dentro da caixa (direcao - top/bottom/left/right)
+    box-sizing - 
+    class - apelido para especificar algo ao chamar para o css - inicio com um ponto (.)
+    display - forma que vou exibir caixa (flex - consigo colocar exatamente onde quero)
+    cores - paleta de cores css - ranoya - copio a #da cor
+    font-size - tamanho da fonte
+    font-weight - grossura da fonte - negrito (100-900)
+    tag span - qd separar um pedaco de texto
+    border-radius - arredondamento em px (retangular) % (eliptico)
+    cursor-pointer - muda o ponteiro do mouse
+    transition - transicao do efeito
+    trocar fonte - google fonts - (poppins - mt usada) - get font - get embed code - codigo da fonte - link - copiar e colar no HEAD do html - copio a primeira linha do codigo da fonte para o css
+    sans-serif - quer dizer q s enao houver a sua fonte ele vai pegar uma da familia sans
+    houver - efeito par quando coloco o mouse em cima
+    div - caixa - bloco a ser modificado
+    top 0 - bem no topo - left 0 - no canto
+    clip-path - rasgo no elemento
+    querySelector - serve para procurar alguem - pega algo que quero no html
+    z-index - sobrepor imagens - quem tem o numero maior fica na frente - se negativo um elemento ele fica atras
+
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+
+}
+
+
+.conteudo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caixa-texto {
+    width: 600px;
+}
+
+h1 {
+    color: #333333;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+
+}
+
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900px;
+}
+
+p {
+    font-size: 16px;
+
+}
+
+button {
+    background: #017143;
+    color: #ffffff;
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.5);
+    margin-left: 20px;
+   
+
+}
+
+button::after {
+    background: #043a26;
+    
+}
+
+.caixa-imagem {
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 400px;
+
+}
+
+
+.copao {
+    width: 350px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.botao-menu {
+    width: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.botao-menu:hover {
+    transform: translateY(-30px)
+}
+
+.circulo {
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 800px) ;
+    z-index: -1;
+}
+
+
